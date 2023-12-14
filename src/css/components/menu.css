@@ -2,6 +2,11 @@
     display: none;
 }
 
+.menu {
+    background-color: var(--black);
+    height: 100vh;
+}
+
 .menu-btn {
     background-color: var(--black);
     /* position: absolute; */
