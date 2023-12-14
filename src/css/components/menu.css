@@ -12,11 +12,13 @@
 }   
 
 .menu__list {
-    font-family: var(--font-serif)
+    font-family: var(--font-serif);
+    padding: var(--space4);
 }
 
 .menu__item {
     font-size: var(--text-title2);
+    padding-bottom: var(--space3);
 }
 
 .menu__link {
