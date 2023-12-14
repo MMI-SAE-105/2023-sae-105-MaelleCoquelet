@@ -30,3 +30,14 @@ h2 {
 h3 {
     font-size: var(--text-title3);
 }
+
+button,
+input,
+textarea {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
