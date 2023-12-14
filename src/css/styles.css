@@ -7,7 +7,9 @@
 /* Variables */
 @import "utils/variables.css";
 /* Règles générales */
+@import "base/main.css";
+@import "base/media.css";
 
 /*Règles de Layout */
 
-/*Tègles des Components */
+/*Règles des Components */
