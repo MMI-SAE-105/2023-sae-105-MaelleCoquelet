@@ -25,15 +25,15 @@
       </a>
       </div>
       <div>
-      <button class="header__menu-btn menu-btn">
+      <button class="header__menu-btn menu-btn" :class="{header__menu_btnClosed:menuIsOpen === true}">
         <img src="/public/icons/menuBurger.svg" alt="Bouton Menu" />
       </button>
-         <button class="header__menu-btn menu-btn header__menu-btn--closed">
+         <button class="header__menu-btn menu-btn header__menu_btnClosed">
         <img src="/public/icons/croix.svg" alt="Bouton Fermer">
       </button>
       </div>
       </div>
-      <nav class="header__menu menu menu--closed">
+      <nav class="header__menu menu menuClosed">
         <ul class="menu__list list-unstyled">
           <li class="menu__item">
             <a class="menu__link" href="#">Frank Gehry</a>
