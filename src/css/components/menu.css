@@ -5,12 +5,21 @@
 .menu-btn {
     width: 28px;
     height: 28px;
-}
+    background-color: var(--black);
+    position: absolute;
+    top: 28px;
+    right: 28px;
+}   
 
-.menu__list {}
+.menu__list {
+    font-family: var(--font-serif)
+}
 
 .menu__item {
     font-size: var(--text-title2);
 }
 
-.menu__link {}
+.menu__link {
+    text-decoration: none;
+    color: var(--black);
+}
