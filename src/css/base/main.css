@@ -41,3 +41,7 @@ textarea {
     padding: 0;
     cursor: pointer;
 }
+
+p {
+    line-height: 120%
+}

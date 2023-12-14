@@ -1,0 +1,15 @@
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: var(--space3);
+}
+
+.footer__text {
+    font-size: var(--text-medium);
+    padding-top: var(--space2);
+    margin: 0;
+}
+
+.footer__logo {
+    padding-right: var(--space3);
+}
