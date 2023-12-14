@@ -1,3 +1,7 @@
 .section{
     padding: var(--space3);
 }
+
+.section--black{
+    background-color: var(--black);
+}
