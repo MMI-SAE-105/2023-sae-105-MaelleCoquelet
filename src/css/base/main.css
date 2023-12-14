@@ -3,6 +3,8 @@
 *::before {
     box-sizing: border-box;
     line-height: 120%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
