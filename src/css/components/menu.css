@@ -1,0 +1,16 @@
+/* .menu {
+    display: none;
+} */
+
+.menu-btn {
+    width: 28px;
+    height: 28px;
+}
+
+.menu__list {}
+
+.menu__item {
+    font-size: var(--text-title2);
+}
+
+.menu__link {}
