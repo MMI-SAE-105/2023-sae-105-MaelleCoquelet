@@ -1,11 +1,11 @@
-/* .menu {
+.menu--closed {
     display: none;
-} */
+}
 
 .menu-btn {
     background-color: var(--black);
     /* position: absolute; */
-}   
+}
 
 .menu__list {
     font-family: var(--font-serif);
