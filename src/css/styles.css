@@ -1,6 +1,8 @@
 /* Polices de caractère */
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
 /* Librairies */
+@import "vendors/normalize.css";
 
 /* Variables */
 
