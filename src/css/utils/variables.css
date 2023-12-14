@@ -1,0 +1,30 @@
+:root {
+    /* Color styles */
+    --white: rgba(243, 243, 243, 1);
+    --black: rgba(36, 36, 36, 1);
+    --gray: rgba(70, 70, 70, 1);
+    --skygray: rgba(201, 206, 212, 1);
+    --deepblue: rgba(44, 57, 66, 1);
+    --sand: rgba(249, 221, 183, 1);
+
+    /* Text-size styles */
+    /* base size: body (15px) */
+    --text-title1: 2.13rem;
+    --text-title2: 1.6rem;
+    --text-title3: 1.33rem;
+    --text-large: 1.87rem;
+    --text-medium: 1.2rem;
+    --text-normal: 1rem;
+    --text-small: 0.93rem;
+
+    /* Font-family styles */
+    --font-sans-serif: 'Open Sans', sans-serif;
+    --font-serif: 'Inika', serif;
+
+    /* Espaces */
+    --space1: 10px;
+    --space2: 20px;
+    --space3: 30px;
+    --space4: 40px;
+    --space5: 50px;
+}
