@@ -23,3 +23,7 @@
     padding: var(--space2) var(--space4);
 
 }
+
+.header__menu-btn--closed {
+    display: none
+}
