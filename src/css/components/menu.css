@@ -3,12 +3,8 @@
 } */
 
 .menu-btn {
-    width: 28px;
-    height: 28px;
     background-color: var(--black);
-    position: absolute;
-    top: 28px;
-    right: 28px;
+    /* position: absolute; */
 }   
 
 .menu__list {

@@ -1,0 +1,19 @@
+.header--bg {
+    background-color: var(--black);
+}
+
+
+.header__title-link {
+    font-size: var(--text-large);
+    margin: 0;
+    padding-left: var(--space5);
+    padding-right: var(--space5);
+    color: var(--white);
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space2) var(--space4);
+}

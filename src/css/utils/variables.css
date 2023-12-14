@@ -17,6 +17,16 @@
     --text-normal: 1rem;
     --text-small: 0.93rem;
 
+    /* équivalence des tailles en px
+        --title1: 32px;
+        --title2: 24px;
+        --title3: 20px;
+        --large: 28px;
+        --medium: 18px;
+        --normal: 15px;
+        --small: 14px; 
+        */
+
     /* Font-family styles */
     --font-sans-serif: 'Open Sans', sans-serif;
     --font-serif: 'Inika', serif;
