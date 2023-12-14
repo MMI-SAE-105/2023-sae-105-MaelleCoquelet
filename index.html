@@ -25,10 +25,10 @@
       </a>
       </div>
       <div>
-      <button class="header__menu-btn menu-btn" :class="{header__menu_btnClosed:menuIsOpen === true}">
+      <button class="header__menu-btn menu-btn" :class="{header__menu_btnClosed:menuIsOpen === true}" @click="menuIsOpen = false">
         <img src="/public/icons/menuBurger.svg" alt="Bouton Menu" />
       </button>
-         <button class="header__menu-btn menu-btn header__menu_btnClosed">
+         <button class="header__menu-btn menu-btn" :class="{header__menu_btnClosed:menuIsOpen === false}" @click="menuIsOpen = true">
         <img src="/public/icons/croix.svg" alt="Bouton Fermer">
       </button>
       </div>
