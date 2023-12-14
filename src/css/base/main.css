@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans-serif);
+    font-size: var(--text-normal);
+    line-height: 120%;
+    letter-spacing: 4%;
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-serif);
+    line-height: 120%;
+}
+
+h1 {
+    font-size: var(--text-title1);
+}
+
+h2 {
+    font-size: var(--text-title2);
+}
+
+h3 {
+    font-size: var(--text-title3);
+}
