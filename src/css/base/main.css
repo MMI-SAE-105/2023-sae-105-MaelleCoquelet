@@ -45,3 +45,14 @@ textarea {
 p {
     line-height: 120%
 }
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-unstyled {
+    text-decoration: none;
+    color: var(--black);
+}
