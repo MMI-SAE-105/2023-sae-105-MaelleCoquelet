@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <title>404 - Page Non trouvée</title>
+  </head>
+  <body>
+    <section class="section section--color-sand">
+      <h1 class="intro__title">Page Non trouvée</h1>
+      <form
+        class="form"
+        action="https://duckduckgo.com/"
+        method="GET"
+        x-data="{ q:'', }"
+        x-on:submit="q = q + ' site:mmimontbeliard.com'"
+      >
+        <div class="form__item">
+          <label class="form__label" for="recherche">Texte à chercher :</label>
+          <input class="form__field" type="text" id="recherche" name="recherche" x-model="q" />
+        </div>
+        <button class="btn btn--color" type="submit">Rechercher</button>
+      </form>
+    </section>
+  </body>
+</html>
