@@ -1,5 +1,9 @@
 .intro__title {
     margin: 0;
+    padding-bottom: var(--space2);
+}
+
+.intro__title--home {
     padding-bottom: var(--space3);
 }
 
@@ -10,4 +14,8 @@
 
 .intro--white {
     color: var(--white);
+}
+
+.intro__content--home {
+    font-size: var(--text-normal);
 }

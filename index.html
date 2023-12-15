@@ -10,7 +10,7 @@
     <!-- La quasi totalité des articles a été rédigée par ChatGPT. MC-->
   </head>
   <body>
-    <header x-data="{menuIsOpen:false,}" class="header header--bg" :class="{menu__noScroll:menuIsOpen === true}">
+    <header x-data="{menuIsOpen:false}" class="header header--bg" :class="{menu__noScroll:menuIsOpen === true}">
       <div class="header__item">
         <div>
       <a class="header__link" href="./index.html">
@@ -72,7 +72,7 @@
     <main>
       <section class="section section--black">
         <header class="section__header intro intro--white">
-          <h1 class="intro__title">Exposition Ephraim</h1>
+          <h1 class="intro__title intro__title--home">Exposition Ephraim</h1>
           <p class="intro__content">
           Bienvenue sur notre sité dédié à l'exposition « Ephraim ». Plongez
           dans un monde de courbes, formes et lignes, pensées et crées par Frank
@@ -83,59 +83,65 @@
         </header>
         <a class="btn btn--ticket link-unstyled" href="">Vers la billetterie</a>
       </section>
-      <section>
-        <header>
-          <h2>Collection</h2>
-          <p>Retrouvez ici une présentation de l’univers de Frank Gehry.</p>
+      <section class="section">
+        <header class="section__header intro">
+          <h2 class="intro__title">Collection</h2>
+          <p class="intro__content intro__content--home">Retrouvez ici une présentation de l’univers de Frank Gehry.</p>
         </header>
-        <article>
-          <a href="#">
-            <img
+        <article class="article">
+          <a class="article__link link-unstyled" href="#">
+            <img class="article__img"
               src="/public/img/cardArticleFrank.webp"
               alt="Portrait de Frank Gehry"
             />
-            <h3>Frank Gehry</h3>
-            <p>
+            <div class="article__text">
+              <h3 class="article__title">Frank Gehry</h3>
+              <p class="article__description">
               Le récit de la vie du célèbre architecte, de ses débuts jusqu’à
               maintenant
-            </p>
-            <div>
-              Voir plus
-              <img src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+             </p>
+              <div class="article__btn btn">
+                Voir plus
+                <img class="article__icon-btn" src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+              </div>
             </div>
           </a>
         </article>
-        <article>
-          <a href="#">
-            <img
+        <article class="article">
+          <a class="article__link link-unstyled" href="#">
+            <img class="article__img"
               src="/public/img/cardArticleExpo.webp"
               alt="Photo de la maison dansante"
             />
-            <h3>« Ephraim »</h3>
-            <p>
-              Retrouvez toutes les informations utiles sur l’expositions :
-              horaires, tarifs...
-            </p>
-            <div>
+            <div class="article__text">
+              <h3 class="article__title">« Ephraim »</h3>
+              <p class="article__description">
+                Retrouvez toutes les informations utiles sur l’expositions :
+                horaires, tarifs...
+              </p>
+              <div class="article__btn btn">
               Voir plus
-              <img src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+                <img class="article__icon-btn" src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+              </div>
             </div>
           </a>
         </article>
-        <article>
-          <a href="#">
-            <img
+        <article class="article">
+          <a class="article__link link-unstyled" href="#">
+            <img class="article__img"
               src="/public/img/cardArticleWork.webp"
               alt="Photo du centre de neurochirurgie à Las Vegas"
             />
-            <h3>Travail architectural</h3>
-            <p>
+            <div class="article__text">
+              <h3 class="article__title">Travail architectural</h3>
+              <p class="article__description">
               Une présentation détaillée du travail de Frank Gehry. Retrouvez
               ici huit de ses œuvres.
-            </p>
-            <div>
-              Voir plus
-              <img src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+              </p>
+              <div class="article__btn btn">
+                Voir plus
+               <img class="article__icon-btn" src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+              </div>
             </div>
           </a>
         </article>
