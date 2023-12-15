@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html
+  lang="fr"
+  x-data="{menuIsOpen:false}"
+  :class="{menu__noScroll:menuIsOpen === true}"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,32 +13,45 @@
     <title>Prague</title>
   </head>
   <body>
-     <header class="header header--bg">
+    <header class="header header--bg">
       <div class="header__item">
+        <a class="header__link link-unstyled" href="./index.html">
+          <img
+            class="header__logo-link"
+            src="/public/icons/home.svg"
+            alt="logo exposition Ephraim"
+          />
+
+          <p class="header__title-link">Ephraim</p>
+        </a>
         <div>
-      <a class="header__link" href="./index.html">
-        <img
-          class="header__logo-link"
-          src="/public/icons/home.svg"
-          alt="logo exposition Ephraim"
-        />
+          <template x-if="menuIsOpen">
+            <button
+              class="header__menu-btn menu-btn"
+              @click="console.log('ok ferme');menuIsOpen = false"
+            >
+              <img src="/public/icons/croix.svg" alt="Bouton Menu" />
+            </button>
+          </template>
+
+          <template x-if="!menuIsOpen">
+            <button
+              class="header__menu-btn menu-btn"
+              @click="console.log('ok ouvre');menuIsOpen = true"
+            >
+              <img src="/public/icons/menuBurger.svg" alt="Bouton Fermer" />
+            </button>
+          </template>
         </div>
-        <div>
-        <p class="header__title-link link-unstyled">Ephraim</p>
-      </a>
       </div>
-      <div>
-      <button class="header__menu-btn menu-btn">
-        <img src="/public/icons/menuBurger.svg" alt="Bouton Menu" />
-      </button>
-      </div>
-      </div>
-      <nav class="header__menu menu">
+      <nav class="header__menu menu" :class="{menuClosed:menuIsOpen === false}">
         <ul class="menu__list list-unstyled">
           <li class="menu__item">
             <a class="menu__link" href="./frank.html">Frank Gehry</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="./exposition.html">Ephraim</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="./exposition.html">Ephraim</a>
+          </li>
           <li class="menu__item">
             <a class="menu__link" href="./works.html">Travail Architectural</a>
           </li>
@@ -155,15 +172,15 @@
           N’hésitez pas à nous envoyer un message pour toute demande de
           renseignements.
         </p>
-         <form class="form" action="#">
+        <form class="form" action="#">
           <div class="form__item">
             <label class="form__label" for="prenom">Prénom</label>
-            <input class="form__field" type="text" name="prenom" id="prenom"/>
+            <input class="form__field" type="text" name="prenom" id="prenom" />
             <p class="form__example">Joseph</p>
           </div>
           <div class="form__item">
             <label class="form__label" for="nom">Nom</label>
-            <input class="form__field" type="text" name="nom" id="nom"/>
+            <input class="form__field" type="text" name="nom" id="nom" />
             <p class="form__example">Joe</p>
           </div>
           <div class="form__item">
