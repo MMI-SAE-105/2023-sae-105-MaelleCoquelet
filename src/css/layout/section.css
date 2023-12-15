@@ -1,11 +1,15 @@
-.section{
+.section {
     padding: var(--space3);
 }
 
-.section--black{
+.section--black {
     background-color: var(--black);
 }
 
-.section--color-sand{
+.section--color-sand {
     background-color: var(--sand);
+}
+
+.section__title {
+    padding-bottom: var(--space1);
 }
