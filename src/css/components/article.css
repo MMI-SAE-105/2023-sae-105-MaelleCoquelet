@@ -22,6 +22,10 @@
     border-radius: 4px;
 }
 
+.article__text--gray{
+    background-color: var(--skygray);
+}
+
 .article__btn {
     border-radius: 0px;
     border-bottom: 1px solid var(--black);
