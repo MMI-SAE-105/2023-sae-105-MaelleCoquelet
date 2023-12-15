@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="/src/css/styles.css" />
-    <title>Prague</title>
+    <title>Toronto</title>
   </head>
-  <body>
+  <body x-data="{affichageImgGalerie:null}">
     <header class="header header--bg">
       <div class="header__item">
         <a class="header__link link-unstyled" href="./index.html">
@@ -85,54 +85,56 @@
     <main>
       <section class="section">
         <header class="section__header intro">
-          <h1 class="intro__title intro__title--gray">Prague, 1996</h1>
+          <h1 class="intro__title intro__title--gray">Toronto, 2008</h1>
           <ul class="list-unstyled intro__list">
             <li>Temps de lecture : 1 minute</li>
             <li>Par Maëlle Coquelet</li>
           </ul>
           <p class="intro__content">
-            Prague, joyau architectural d'Europe, abrite des trésors qui
-            transcendent les conventions. Au sein de cette ville empreinte
-            d'histoire, émerge la Maison dansante, une œuvre architecturale qui
-            défie la gravité et réinvente la skyline de Prague. Plongeons dans
-            cet édifice extraordinaire qui marie l'art, la danse, et
-            l'architecture d'une manière qui enchante et surprend.
+            Barcelone, la ville emblématique de l'Espagne, est imprégnée d'une
+            richesse architecturale qui séduit les visiteurs du monde entier. Au
+            cœur de cette métropole méditerranéenne, trône fièrement "El Peix"
+            (Le Poisson), une œuvre architecturale remarquable signée Frank
+            Gehry. Plongeons dans les eaux créatives de cette structure unique
+            qui incarne à la fois le génie de l'architecte et l'esprit vibrant
+            de la ville.
           </p>
           <figure class="figure">
             <img
               class="figure__img"
-              src="/public/img/imgPrague1.webp"
-              alt="Photo de la Maison Dansante, Prague"
+              src="/public/img/imgBarcelone1.webp"
+              alt="Photo d'El Peix, Barcelone"
             />
             <figcaption class="figure__legend">
-              Maison Dansante, Prague, par Frank Gehry
+              El Peix, Barcelone, par Frank Gehry
             </figcaption>
           </figure>
         </header>
-        <h2 class="content__title">
-          La Maison dansante : Un Ballet Architectural
-        </h2>
+        <h2 class="content__title">La Symphonie d'El Peix</h2>
         <p class="content__paragraph">
-          La Maison dansante est un exemple emblématique du style
-          déconstructiviste, avec ses formes organiques, ses angles inclinés et
-          ses lignes qui semblent défier la symétrie conventionnelle. L'élégance
-          et la légèreté de l'ensemble donnent l'impression que les deux tours
-          dansent ensemble, créant ainsi une chorégraphie architecturale unique
-          au cœur de la ville. Au-delà de son extérieur spectaculaire, la Maison
-          dansante abrite des espaces intérieurs qui reflètent la même
-          ingéniosité architecturale. Les courbes et les inclinaisons se
-          poursuivent à l'intérieur, créant des espaces dynamiques et uniques.
-          Les visiteurs ont ainsi l'occasion de vivre une expérience immersive,
-          où l'architecture se transforme en une expérience cinétique.
+          L'architecte de renommée mondiale, Frank Gehry, est le maestro
+          derrière cette œuvre remarquable. Connu pour son approche
+          déconstructiviste et son utilisation novatrice des matériaux, Gehry a
+          créé El Peix comme une célébration de la mer qui borde la ville. Les
+          écailles scintillantes d'aluminium qui recouvrent la structure captent
+          la lumière du soleil, créant un spectacle visuel éblouissant qui
+          évolue au fil des heures. El Peix à Barcelone demeure une pièce
+          maîtresse du panorama architectural mondial. Plus qu'une simple
+          structure, il incarne l'harmonie entre l'homme et la nature, tout en
+          honorant l'héritage olympique de la ville. Cette œuvre spectaculaire
+          de Frank Gehry continue d'émerveiller les visiteurs, rappelant à
+          chacun la capacité de l'architecture à transcender les simples
+          édifices pour devenir de véritables œuvres d'art intégrées dans le
+          tissu même de la ville.
         </p>
         <figure class="figure">
           <img
             class="figure__img"
-            src="/public/img/imgPrague2.webp"
-            alt="Photo de la Maison Dansante, Prague"
+            src="/public/img/imgBarcelone2.webp"
+            alt="Photo d'El Peix, Barcelone"
           />
           <figcaption class="figure__legend">
-            Maison Dansante, Prague, par Frank Gehry
+            El Peix, Barcelone, par Frank Gehry
           </figcaption>
         </figure>
       </section>
@@ -204,16 +206,15 @@
             @click="affichageImgGalerie='/public/img/galerie8.webp'"
           />
         </div>
-        <div
-          class="overlay-galerie"
-          x-show="affichageImgGalerie"
-          @click="affichageImgGalerie=null"
-          @keyup.escape.window="affichageImgGalerie=null"
-        >
-          <figure>
-            <img :src="affichageImgGalerie" alt="Image Galerie" />
-          </figure>
-        </div>
+         <div
+      class="overlay-galerie"
+      x-show="affichageImgGalerie"
+      @click="affichageImgGalerie=null"
+      @keyup.escape.window="affichageImgGalerie=null">
+      <figure>
+        <img :src="affichageImgGalerie" alt="Image Galerie">
+      </figure>
+    </div>
       </section>
       <section class="section section--color-sand">
         <header class="section__header intro">
