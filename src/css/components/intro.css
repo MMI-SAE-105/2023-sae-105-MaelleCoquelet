@@ -12,6 +12,12 @@
     font-size: var(--text-medium);
 }
 
+.intro__list {
+    font-size: var(--text-small);
+    padding-bottom: var(--space1);
+    font-style: italic;
+}
+
 .intro--white {
     color: var(--white);
 }
