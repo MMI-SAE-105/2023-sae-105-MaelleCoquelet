@@ -1,0 +1,35 @@
+.article {
+    padding-bottom: var(--space3);
+    position: relative;
+    margin-bottom: var(--space3);
+}
+
+.article__img {
+    padding-right: 65px;
+}
+
+.article__text {
+    position: absolute;
+    background-color: var(--sand);
+    padding: var(--space2);
+    bottom: 0;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space1);
+    border-radius: 4px;
+}
+
+.article__btn {
+    border-radius: 0px;
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: center;
+    gap: var(--space2);
+}
+
+.article__icon-btn {
+    color: var(--black);
+}
