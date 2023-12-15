@@ -1,0 +1,8 @@
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+}
+
+.galerie__img {
+    padding: 5px;
+}
