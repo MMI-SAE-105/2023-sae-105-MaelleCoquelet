@@ -5,3 +5,7 @@
 .section--black{
     background-color: var(--black);
 }
+
+.section--color-sand{
+    background-color: var(--sand);
+}
