@@ -91,50 +91,47 @@
             <li>Par Maëlle Coquelet</li>
           </ul>
           <p class="intro__content">
-            Barcelone, la ville emblématique de l'Espagne, est imprégnée d'une
-            richesse architecturale qui séduit les visiteurs du monde entier. Au
-            cœur de cette métropole méditerranéenne, trône fièrement "El Peix"
-            (Le Poisson), une œuvre architecturale remarquable signée Frank
-            Gehry. Plongeons dans les eaux créatives de cette structure unique
-            qui incarne à la fois le génie de l'architecte et l'esprit vibrant
-            de la ville.
+            La Galerie d'Art de l'Ontario (AGO), située au cœur de Toronto, est
+            bien plus qu'un musée ; c'est un écrin culturel qui incarne
+            l'élégance architecturale et la richesse artistique de la région.
+            Conçue par l'architecte renommé Frank Gehry, la structure révèle des
+            formes audacieuses et des lignes dynamiques qui captivent le regard
+            dès le premier regard.
           </p>
           <figure class="figure">
             <img
               class="figure__img"
               src="/public/img/imgToronto1.webp"
-              alt="Photo d'El Peix, Barcelone"
+              alt="Photo de la Galerie d'Art, Toronto"
             />
             <figcaption class="figure__legend">
-              El Peix, Barcelone, par Frank Gehry
+              Art Gallery, Toronto, par Frank Gehry
             </figcaption>
           </figure>
         </header>
-        <h2 class="content__title">La Symphonie d'El Peix</h2>
+        <h2 class="content__title">
+          Un Dialogue Harmonieux entre Ancien et Moderne
+        </h2>
         <p class="content__paragraph">
-          L'architecte de renommée mondiale, Frank Gehry, est le maestro
-          derrière cette œuvre remarquable. Connu pour son approche
-          déconstructiviste et son utilisation novatrice des matériaux, Gehry a
-          créé El Peix comme une célébration de la mer qui borde la ville. Les
-          écailles scintillantes d'aluminium qui recouvrent la structure captent
-          la lumière du soleil, créant un spectacle visuel éblouissant qui
-          évolue au fil des heures. El Peix à Barcelone demeure une pièce
-          maîtresse du panorama architectural mondial. Plus qu'une simple
-          structure, il incarne l'harmonie entre l'homme et la nature, tout en
-          honorant l'héritage olympique de la ville. Cette œuvre spectaculaire
-          de Frank Gehry continue d'émerveiller les visiteurs, rappelant à
-          chacun la capacité de l'architecture à transcender les simples
-          édifices pour devenir de véritables œuvres d'art intégrées dans le
-          tissu même de la ville.
+          L'AGO, inaugurée en 2008, est un exemple remarquable d'intégration
+          entre le patrimoine historique et la modernité. Les façades de verre
+          et les tours sculpturales de Gehry dialoguent harmonieusement avec le
+          bâtiment d'origine, créant un espace où le passé et le présent se
+          rencontrent de manière spectaculaire. À l'intérieur, l'AGO abrite une
+          collection impressionnante d'œuvres d'art, allant des maîtres
+          classiques aux créations contemporaines. Les galeries spacieuses et
+          éclairées mettent en valeur chaque pièce de manière à offrir une
+          expérience immersive, où les visiteurs peuvent explorer l'évolution
+          artistique à travers les siècles.
         </p>
         <figure class="figure">
           <img
             class="figure__img"
             src="/public/img/imgToronto2.webp"
-            alt="Photo d'El Peix, Barcelone"
+            alt="Photo de la Galerie d'Art, Toronto"
           />
           <figcaption class="figure__legend">
-            El Peix, Barcelone, par Frank Gehry
+            Art Gallery, Toronto, par Frank Gehry
           </figcaption>
         </figure>
       </section>
@@ -206,15 +203,16 @@
             @click="affichageImgGalerie='/public/img/galerie8.webp'"
           />
         </div>
-         <div
-      class="overlay-galerie"
-      x-show="affichageImgGalerie"
-      @click="affichageImgGalerie=null"
-      @keyup.escape.window="affichageImgGalerie=null">
-      <figure>
-        <img :src="affichageImgGalerie" alt="Image Galerie">
-      </figure>
-    </div>
+        <div
+          class="overlay-galerie"
+          x-show="affichageImgGalerie"
+          @click="affichageImgGalerie=null"
+          @keyup.escape.window="affichageImgGalerie=null"
+        >
+          <figure>
+            <img :src="affichageImgGalerie" alt="Image Galerie" />
+          </figure>
+        </div>
       </section>
       <section class="section section--color-sand">
         <header class="section__header intro">
