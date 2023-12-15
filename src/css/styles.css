@@ -23,4 +23,5 @@
 @import "components/article.css";
 @import "components/figure.css";
 @import "components/content.css";
-@import"components/galerie.css";
+@import "components/galerie.css";
+@import "components/carousel.css"
