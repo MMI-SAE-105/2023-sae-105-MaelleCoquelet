@@ -1,0 +1,8 @@
+.content__title {
+    padding: var(--space1) 0;
+}
+
+.content__paragraph {
+    padding: var(--space1) 0;
+    line-height: 140%;
+}
