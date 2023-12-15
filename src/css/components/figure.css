@@ -1,0 +1,8 @@
+.figure {
+    padding-top: var(--space1);
+    padding-bottom: var(--space1);
+}
+
+.figure__legend {
+    font-style: italic;
+}
