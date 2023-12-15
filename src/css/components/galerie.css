@@ -6,3 +6,25 @@
 .galerie__img {
     padding: 5px;
 }
+
+.overlay-galerie {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.overlay-galerie::before {
+    content: url("/public/icons/croix.svg");
+    position: relative;
+    top: 0;
+    right: var(--space3);
+    padding-bottom: var(--space2);
+}

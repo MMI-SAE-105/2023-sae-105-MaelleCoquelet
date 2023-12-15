@@ -161,43 +161,60 @@
             class="galerie__img"
             src="/public/img/galerie1.webp"
             alt="El Peix"
+            @click="affichageImgGalerie='/public/img/galerie1.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie2.webp"
             alt="Maison Dansante"
+            @click="affichageImgGalerie='/public/img/galerie2.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie3.webp"
             alt="Pop Culture"
+            @click="affichageImgGalerie='/public/img/galerie3.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie4.webp"
             alt="Gehry Tower"
+            @click="affichageImgGalerie='/public/img/galerie4.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie5.webp"
             alt="Weatherhead"
+            @click="affichageImgGalerie='/public/img/galerie5.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie6.webp"
             alt="Walt Disney Concert Hall"
+            @click="affichageImgGalerie='/public/img/galerie6.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie7.webp"
             alt="Escalier Musée Beaux Arts"
+            @click="affichageImgGalerie='/public/img/galerie7.webp'"
           />
           <img
             class="galerie__img"
             src="/public/img/galerie8.webp"
             alt="Vue aéerienne Biomusée"
+            @click="affichageImgGalerie='/public/img/galerie8.webp'"
           />
         </div>
+         <div
+      class="overlay-galerie"
+      x-show="affichageImgGalerie"
+      @click="affichageImgGalerie=null"
+      @keyup.escape.window="affichageImgGalerie=null">
+      <figure>
+        <img :src="affichageImgGalerie" alt="Image Galerie">
+      </figure>
+    </div>
       </section>
       <section class="section section--color-sand">
         <header class="section__header intro">
