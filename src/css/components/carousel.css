@@ -13,4 +13,5 @@
     width: 100%;
     flex: none;
     scroll-snap-align: start;
+    border: 3px solid var(--white);
 }
