@@ -1,5 +1,6 @@
 .header {
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0;
 }
 
@@ -7,6 +8,10 @@
     background-color: var(--black);
 }
 
+.header__link {
+    display: flex;
+    align-items: center;
+}
 
 .header__title-link {
     font-size: var(--text-large);
@@ -14,6 +19,8 @@
     padding-left: var(--space5);
     padding-right: var(--space5);
     color: var(--white);
+    font-family: var(--font-serif);
+    text-decoration: none;
 }
 
 .header__item {

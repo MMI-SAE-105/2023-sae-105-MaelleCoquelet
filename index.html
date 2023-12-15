@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html
+  lang="fr"
+  x-data="{menuIsOpen:false}"
+  :class="{menu__noScroll:menuIsOpen === true}"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,35 +14,45 @@
     <!-- La quasi totalité des articles a été rédigée par ChatGPT. MC-->
   </head>
   <body>
-    <header x-data="{menuIsOpen:false}" class="header header--bg" :class="{menu__noScroll:menuIsOpen === true}">
+    <header class="header header--bg">
       <div class="header__item">
+        <a class="header__link link-unstyled" href="./index.html">
+          <img
+            class="header__logo-link"
+            src="/public/icons/home.svg"
+            alt="logo exposition Ephraim"
+          />
+
+          <p class="header__title-link">Ephraim</p>
+        </a>
         <div>
-      <a class="header__link" href="./index.html">
-        <img
-          class="header__logo-link"
-          src="/public/icons/home.svg"
-          alt="logo exposition Ephraim"
-        />
+          <template x-if="menuIsOpen">
+            <button
+              class="header__menu-btn menu-btn"
+              @click="console.log('ok ferme');menuIsOpen = false"
+            >
+              <img src="/public/icons/croix.svg" alt="Bouton Menu" />
+            </button>
+          </template>
+
+          <template x-if="!menuIsOpen">
+            <button
+              class="header__menu-btn menu-btn"
+              @click="console.log('ok ouvre');menuIsOpen = true"
+            >
+              <img src="/public/icons/menuBurger.svg" alt="Bouton Fermer" />
+            </button>
+          </template>
         </div>
-        <div>
-        <p class="header__title-link link-unstyled">Ephraim</p>
-      </a>
-      </div>
-      <div>
-      <button class="header__menu-btn menu-btn" :class="{header__menu_btnClosed:menuIsOpen === true}" @click="menuIsOpen = false">
-        <img src="/public/icons/menuBurger.svg" alt="Bouton Menu" />
-      </button>
-         <button class="header__menu-btn menu-btn" :class="{header__menu_btnClosed:menuIsOpen === false}" @click="menuIsOpen = true">
-        <img src="/public/icons/croix.svg" alt="Bouton Fermer">
-      </button>
-      </div>
       </div>
       <nav class="header__menu menu" :class="{menuClosed:menuIsOpen === false}">
         <ul class="menu__list list-unstyled">
           <li class="menu__item">
             <a class="menu__link" href="./frank.html">Frank Gehry</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="./exposition.html">Ephraim</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="./exposition.html">Ephraim</a>
+          </li>
           <li class="menu__item">
             <a class="menu__link" href="./works.html">Travail Architectural</a>
           </li>
@@ -74,11 +88,12 @@
         <header class="section__header intro intro--white">
           <h1 class="intro__title intro__title--home">Exposition Ephraim</h1>
           <p class="intro__content">
-          Bienvenue sur notre sité dédié à l'exposition « Ephraim ». Plongez
-          dans un monde de courbes, formes et lignes, pensées et crées par Frank
-          Gehry. Décrit comme le meilleur architecte de son époque, retrouvez
-          ici quelques unes de ses œuvres les plus marquantes. Vous trouverez
-          aussi toutes les informations importantes concernant l'exposition.
+            Bienvenue sur notre sité dédié à l'exposition « Ephraim ». Plongez
+            dans un monde de courbes, formes et lignes, pensées et crées par
+            Frank Gehry. Décrit comme le meilleur architecte de son époque,
+            retrouvez ici quelques unes de ses œuvres les plus marquantes. Vous
+            trouverez aussi toutes les informations importantes concernant
+            l'exposition.
           </p>
         </header>
         <a class="btn btn--ticket link-unstyled" href="">Vers la billetterie</a>
@@ -86,30 +101,38 @@
       <section class="section">
         <header class="section__header intro">
           <h2 class="intro__title">Collection</h2>
-          <p class="intro__content intro__content--home">Retrouvez ici une présentation de l’univers de Frank Gehry.</p>
+          <p class="intro__content intro__content--home">
+            Retrouvez ici une présentation de l’univers de Frank Gehry.
+          </p>
         </header>
         <article class="article">
           <a class="article__link link-unstyled" href="#">
-            <img class="article__img"
+            <img
+              class="article__img"
               src="/public/img/cardArticleFrank.webp"
               alt="Portrait de Frank Gehry"
             />
             <div class="article__text">
               <h3 class="article__title">Frank Gehry</h3>
               <p class="article__description">
-              Le récit de la vie du célèbre architecte, de ses débuts jusqu’à
-              maintenant
-             </p>
+                Le récit de la vie du célèbre architecte, de ses débuts jusqu’à
+                maintenant
+              </p>
               <div class="article__btn btn">
                 Voir plus
-                <img class="article__icon-btn" src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+                <img
+                  class="article__icon-btn"
+                  src="/public/icons/flecheDroite.svg"
+                  alt="Flèche droite"
+                />
               </div>
             </div>
           </a>
         </article>
         <article class="article">
           <a class="article__link link-unstyled" href="#">
-            <img class="article__img"
+            <img
+              class="article__img"
               src="/public/img/cardArticleExpo.webp"
               alt="Photo de la maison dansante"
             />
@@ -120,27 +143,36 @@
                 horaires, tarifs...
               </p>
               <div class="article__btn btn">
-              Voir plus
-                <img class="article__icon-btn" src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+                Voir plus
+                <img
+                  class="article__icon-btn"
+                  src="/public/icons/flecheDroite.svg"
+                  alt="Flèche droite"
+                />
               </div>
             </div>
           </a>
         </article>
         <article class="article">
           <a class="article__link link-unstyled" href="#">
-            <img class="article__img"
+            <img
+              class="article__img"
               src="/public/img/cardArticleWork.webp"
               alt="Photo du centre de neurochirurgie à Las Vegas"
             />
             <div class="article__text">
               <h3 class="article__title">Travail architectural</h3>
               <p class="article__description">
-              Une présentation détaillée du travail de Frank Gehry. Retrouvez
-              ici huit de ses œuvres.
+                Une présentation détaillée du travail de Frank Gehry. Retrouvez
+                ici huit de ses œuvres.
               </p>
               <div class="article__btn btn">
                 Voir plus
-               <img class="article__icon-btn" src="/public/icons/flecheDroite.svg" alt="Flèche droite" />
+                <img
+                  class="article__icon-btn"
+                  src="/public/icons/flecheDroite.svg"
+                  alt="Flèche droite"
+                />
               </div>
             </div>
           </a>
@@ -154,15 +186,15 @@
           N’hésitez pas à nous envoyer un message pour toute demande de
           renseignements.
         </p>
-         <form class="form" action="#">
+        <form class="form" action="#">
           <div class="form__item">
             <label class="form__label" for="prenom">Prénom</label>
-            <input class="form__field" type="text" name="prenom" id="prenom"/>
+            <input class="form__field" type="text" name="prenom" id="prenom" />
             <p class="form__example">Joseph</p>
           </div>
           <div class="form__item">
             <label class="form__label" for="nom">Nom</label>
-            <input class="form__field" type="text" name="nom" id="nom"/>
+            <input class="form__field" type="text" name="nom" id="nom" />
             <p class="form__example">Joe</p>
           </div>
           <div class="form__item">
