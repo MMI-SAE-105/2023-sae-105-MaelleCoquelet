@@ -17,5 +17,6 @@
 
 /*Règles des Components */
 @import "components/menu.css";
-@import"components/intro.css";
-@import"components/btn.css";
+@import "components/intro.css";
+@import "components/btn.css";
+@import "components/form.css";

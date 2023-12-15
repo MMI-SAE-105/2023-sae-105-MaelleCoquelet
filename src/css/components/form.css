@@ -1,0 +1,25 @@
+.form__title {
+    padding-bottom: var(--space2);
+}
+
+.form__description {
+    padding-bottom: var(--space2);
+}
+
+.form__item {
+    display: block;
+    padding: var(--space1) 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.form__label {
+    text-transform: uppercase;
+}
+
+.form__example {
+    color: var(--gray);
+}
+
+.form__item--message {
+    display: flex;
+}

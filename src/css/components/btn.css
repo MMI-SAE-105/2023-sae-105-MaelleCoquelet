@@ -1,12 +1,21 @@
 .btn {
     border-radius: 4px;
+    padding: 8px 12px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
 }
 
 .btn--ticket {
     background-color: var(--sand);
     color: var(--black);
-    padding: 8px 12px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.btn--color {
+    display: block;
+    background-color: var(--deepblue);
+    color: var(--white);
+    margin-top: var(--space2);
 }
