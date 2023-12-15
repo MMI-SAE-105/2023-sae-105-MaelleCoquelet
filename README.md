@@ -2,6 +2,7 @@
 - NOM : COQUELET
 - PRÉNOM : Maëlle
 - URL du site : https://stellar-pie-f3a036.netlify.app
+- URL personnalisé du site : https://sae105.maelle-coquelet.fr/
 - URL FIGMA : https://www.figma.com/file/mQ97B7hUOpJAublLN6x7yc/SAE-105-Maelle-Coquelet?type=design&node-id=1929%3A2717&mode=design&t=scEDRYZaxzQgqNEJ-1
 
 # Structure de départ pour la SAE 105.
