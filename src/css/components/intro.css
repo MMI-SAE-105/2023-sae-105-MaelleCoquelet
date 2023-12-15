@@ -1,6 +1,18 @@
 .intro__title {
     margin: 0;
     padding-bottom: var(--space2);
+    position: relative;
+}
+
+.intro__title--sand::after{
+    content: "";
+    position: absolute;
+    right: 35%;
+    left: 5%;
+    bottom: 30%;
+    height: 30%;
+    background-color: var(--sand);
+    z-index: -1;
 }
 
 .intro__title--home {
